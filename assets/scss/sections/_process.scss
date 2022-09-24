@@ -1,0 +1,62 @@
+/*---!-------------PROCESS SECTION STYLES-------------!---*/
+#process-section {
+    padding: 60px 0;
+
+    .section-heading {
+        text-align: center;
+        margin-bottom: 80px;
+    }
+
+    .single-process {
+        text-align: center;
+        padding: 20px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 72%;
+            left: 67%;
+            top: 65px;
+            border-top: 4px dotted $color-6;
+        }
+
+        &::after {
+            content: "\f105";
+            font: var(--fa-font-solid);
+            position: absolute;
+            right: -41%;
+            top: 57px;
+            color: $color-6;
+        }
+
+        i {
+            background-color: $color-2;
+            color: $white;
+            padding: 30px 0;
+            width: 90px;
+            font-size: 30px;
+            border-radius: 50%;
+            margin-bottom: 35px;
+        }
+
+        &:has(.fa-phone-volume) {
+            i {
+                background-color: $color-3;
+            }
+        }
+
+        h3 {
+            color: $black;
+            text-transform: capitalize;
+            margin-bottom: 15px;
+        }
+    }
+
+    .last-process {
+        &::after,
+        &::before {
+            opacity: 0;
+        }
+    }
+}

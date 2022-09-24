@@ -1,0 +1,98 @@
+/*---!-------------ASSET SECTION STYLES-------------!---*/
+#asset-section {
+    padding: 120px 0;
+    background-color: #f8f8fa;
+
+    .section-heading {
+        margin-bottom: 100px;
+    }
+
+    .nav-pills {
+        margin-bottom: 50px;
+    }
+
+    .nav-pills .nav-link {
+        background-color: $white;
+        border-radius: 100px;
+        color: $main-color;
+        margin-right: 45px;
+        box-shadow: 0 0 147px rgba(0, 0, 0, 0.1);
+
+        &.active,
+        .nav-pills .show > .nav-link {
+            background-color: $color-3;
+        }
+    }
+
+    .search-asset {
+        input#search-asset {
+            height: 44px;
+        }
+
+        button.to-search {
+            padding: 0 15px;
+
+            i {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .single-asset {
+        background: #fff;
+        border: 1px solid #e7e7e7;
+        border-radius: 5px;
+
+        .asset-header {
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #e7e7e7;
+            padding: 13px 20px 8px;
+
+            i {
+                background: #ffbd69;
+                font-size: 20px;
+                color: $color-2;
+                border-radius: 50%;
+                padding: 13px;
+            }
+        }
+    }
+
+    .asset-info {
+        padding: 20px;
+        border-bottom: 1px solid #e7e7e7;
+
+        .single-info {
+            background: #f8f8fa;
+            border-radius: 15px;
+            display: flex;
+            padding: 6px 15px;
+            margin-bottom: 15px;
+            align-items: center;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            i {
+                margin-right: 10px;
+            }
+
+            h5 {
+                color: $main-color;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .asset-company {
+        margin: 20px;
+        text-align: center;
+
+        a {
+            text-decoration: underline;
+            color: #787878;
+        }
+    }
+}

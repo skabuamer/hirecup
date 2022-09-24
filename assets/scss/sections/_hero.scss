@@ -1,0 +1,84 @@
+/*---!-------------HERO SECTION STYLES-------------!---*/
+#hero-section {
+    .hero-content {
+        padding: 180px 0;
+    }
+    h1 {
+        margin-bottom: 20px;
+        margin-right: -300px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: -75px;
+            left: -35px;
+            width: 166px;
+            height: 166px;
+            background-color: $color-5;
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+
+    p {
+        margin-bottom: 65px;
+    }
+
+    label {
+        color: $color-3;
+        display: block;
+        margin-bottom: 10px;
+        font-family: $font-2;
+        font-style: italic;
+    }
+}
+
+input#search,
+input#search-asset {
+    border: 0;
+    border-radius: 100px;
+    box-shadow: 0 0 50px #dbdbdb70;
+    height: 70px;
+    width: 100%;
+    padding: 0 80px 0 25px;
+}
+
+form {
+    position: relative;
+}
+
+button.to-search {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: 0;
+    padding: 25px;
+    bottom: 0;
+    border-radius: 0px 50px 50px 50px;
+    background-color: $color-2;
+    color: $white;
+
+    i {
+        font-size: 25px;
+    }
+}
+
+.gold-bg {
+    background-color: #f3c62382;
+    padding: 0 30px;
+}
+
+.hero-img {
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+// }
+
+@include xl {
+    #hero-section {
+    }
+}

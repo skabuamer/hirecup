@@ -1,0 +1,45 @@
+/*---!-------------HIRE SECTION STYLES-------------!---*/
+#hire-section {
+    padding: 60px 0;
+
+    .section-heading {
+        width: 100%;
+
+        h2 {
+            margin-bottom: 46px;
+
+            .colored {
+                color: $color-3;
+            }
+        }
+
+        p {
+            margin-bottom: 47px;
+        }
+
+        .btn-custom {
+            background-color: $color-3;
+            border-radius: 100px;
+            height: 50px;
+            padding: 0 40px;
+            line-height: 47px;
+
+            color: $main-color;
+
+            i {
+                margin-right: 10px;
+            }
+        }
+
+        .btn-custom:last-child {
+            background: none;
+            text-decoration: underline;
+            border: none;
+
+            &:hover {
+                color: $color-2;
+                border: none;
+            }
+        }
+    }
+}

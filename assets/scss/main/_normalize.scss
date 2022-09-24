@@ -1,0 +1,17 @@
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    font: {
+        family: $main-font;
+        size: 18px;
+    }
+    line-height: 28px;
+    background-color: #fff;
+    color: $black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}

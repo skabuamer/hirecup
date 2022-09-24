@@ -1,0 +1,94 @@
+/*------------------!--------------------GLOBAL STYLES------------------------!--------------*/
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: inherit;
+}
+
+a {
+    transition: all 0.4s ease;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+button:focus,
+button:hover {
+    outline: none;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    outline: none;
+}
+
+.btn-custom {
+    display: inline-block;
+    background-color: $color-2;
+    color: $white;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 41px;
+    height: 45px;
+    padding: 0px 25px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    border: 1px solid transparent;
+
+    &:hover {
+        background-color: #fff;
+        border: 1px solid $main-color;
+    }
+}
+
+.section-heading {
+    width: 65%;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-family: $font-2;
+    font-weight: 600;
+    line-height: 23px;
+    color: $color-2;
+    padding-left: 65px;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 13px;
+    text-transform: capitalize;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: $color-2;
+        width: 55px;
+        height: 3px;
+        left: 0;
+        top: 50%;
+
+        transform: translate(0, -50%);
+    }
+}
+
+.colored {
+    color: $color-2;
+}
+
+.section-heading h4 {
+    color: #ff3946;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+.section-heading h2 {
+    text-transform: capitalize;
+}

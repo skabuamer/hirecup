@@ -1,0 +1,12 @@
+/*---!-------------CLIENT SECTION STYLES-------------!---*/
+#client-section {
+    padding: 60px 0;
+
+    .single-client {
+        text-align: center;
+    }
+}
+@include xl {
+    #client-section {
+    }
+}

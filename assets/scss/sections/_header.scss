@@ -1,0 +1,26 @@
+/*---!-------------HEADER SECTION STYLES-------------!---*/
+header {
+    padding: 30px 0;
+
+    // .navbar-nav {
+    //     background: url(../img/bg/header-banner-bg.png);
+    // }
+
+    .nav-item {
+        margin-left: 55px;
+
+        a {
+            color: $black;
+            text-transform: capitalize;
+        }
+
+        .btn-custom {
+            color: $white;
+        }
+    }
+}
+
+@include xl {
+    header {
+    }
+}

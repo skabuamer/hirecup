@@ -1,0 +1,73 @@
+/*---!-------------FOOTER SECTION STYLES-------------!---*/
+footer {
+    .footer-top {
+        padding: 85px 0;
+        background-color: $main-color;
+
+        .footer-widget {
+            h3 {
+                color: $white;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                margin-bottom: 22px;
+            }
+
+            li {
+                margin-bottom: 15px;
+                color: $white;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 15px;
+                letter-spacing: 1px;
+            }
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $color-3;
+                }
+            }
+        }
+
+        .socials {
+            i {
+                font-size: 25px;
+            }
+        }
+
+        .contact-info {
+            i {
+                color: $color-3;
+                margin-right: 10px;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        padding: 30px 0;
+        background-color: #05294b;
+
+        .copyright {
+            color: $white;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            letter-spacing: 2%;
+        }
+
+        .footer-nav {
+            a {
+                margin-left: 55px;
+                color: $white;
+                text-transform: capitalize;
+                font-size: 17px;
+
+                &:hover {
+                    color: $color-3;
+                }
+            }
+        }
+    }
+}
