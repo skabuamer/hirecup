@@ -45,8 +45,17 @@ a:visited {
     border: 1px solid transparent;
 
     &:hover {
-        background-color: #fff;
-        border: 1px solid $main-color;
+        background-color: rgb(109, 9, 9);
+        animation: hover 0.4s forwards;
+    }
+}
+
+@keyframes hover {
+    0% {
+        background: 0%;
+    }
+    100% {
+        background: 100%;
     }
 }
 

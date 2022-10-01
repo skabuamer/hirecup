@@ -1,0 +1,111 @@
+#testimonial-section {
+    padding: 120px 0 60px;
+
+    .reviewer-table {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background-color: $color-2;
+            opacity: 65%;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 370px;
+            border-radius: 100px 100px 200px 100px;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 27%;
+            color: white;
+            font-size: 70px;
+            transform: translate(0, -50%);
+        }
+
+        .reviewers {
+            .current-reviewer img {
+                transform: scale(1.5);
+                transition: all 0.4s ease;
+                // left: 270px;
+            }
+            .img-1 {
+                position: absolute;
+                top: -40px;
+                left: 240px;
+                // width: 185px;
+            }
+            .img-2 {
+                position: absolute;
+                top: auto;
+                left: 185px;
+                bottom: -30px;
+            }
+            .img-3 {
+                position: absolute;
+                top: auto;
+                left: -60px;
+                bottom: 35px;
+            }
+            .img-4 {
+                position: absolute;
+                top: -20px;
+                left: -10px;
+            }
+        }
+    }
+
+    .reviewer-info {
+        font-family: $font-2;
+        font-weight: 700;
+        margin-bottom: 40px;
+        .name {
+            display: block;
+            color: $color-2;
+            font-size: 18px;
+            line-height: 28px;
+            text-transform: capitalize;
+        }
+        .job {
+            font-size: 15px;
+            line-height: 25px;
+            display: block;
+            text-decoration: underline;
+            text-transform: capitalize;
+            color: $main-color;
+        }
+    }
+    .reviewer-quote {
+        font-family: $font-2;
+        font-weight: 900;
+        font-size: 40px;
+        line-height: 50px;
+        color: $main-color;
+    }
+
+    .testimonial-slider-control {
+        margin-top: 40px;
+        button {
+            width: 60px;
+            height: 60px;
+            color: $main-color;
+            border: 0;
+            line-height: 60px;
+            background-color: $color-4;
+            margin-right: 30px;
+
+            &:hover {
+                background-color: $color-3;
+            }
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+
+            i {
+                font-size: 25px;
+            }
+        }
+    }
+}

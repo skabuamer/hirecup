@@ -1,5 +1,7 @@
 /*---!-------------HERO SECTION STYLES-------------!---*/
 #hero-section {
+    position: relative;
+
     .hero-content {
         padding: 180px 0;
     }
@@ -71,14 +73,100 @@ button.to-search {
 .hero-img {
     img {
         position: absolute;
-        top: 0;
+        top: -105px;
         right: 0;
         z-index: -1;
     }
 }
-// }
 
 @include xl {
     #hero-section {
+        h1 {
+            font-size: 60px;
+            line-height: 70px;
+            margin-right: -100px;
+        }
+
+        label,
+        p {
+            font-size: 16px;
+            line-height: 26px;
+        }
+    }
+
+    .hero-img img {
+        width: 58%;
+    }
+}
+
+@include lg {
+    #hero-section {
+        h1 {
+            font-size: 45px;
+            line-height: 55px;
+            margin-right: -100px;
+        }
+    }
+
+    .gold-bg {
+        padding: 0 20px;
+    }
+
+    .hero-img img {
+        width: 70%;
+    }
+}
+
+@include md {
+    #hero-section {
+        h1 {
+            font-size: 35px;
+            line-height: 45px;
+            margin-right: 0px;
+        }
+
+        span,
+        label,
+        p {
+            font-size: 14px;
+            line-height: 24px;
+        }
+
+        .gold-bg {
+            font-size: 35px;
+            line-height: 45px;
+            padding: 0 10px;
+        }
+
+        .hero-content {
+            padding: 120px 0;
+        }
+    }
+    .hero-img img {
+        top: -110px;
+        // width: 70%;
+    }
+}
+
+@include sm {
+    #hero-section {
+        background-color: #ffffffbd;
+
+        p {
+            margin-bottom: 40px;
+        }
+
+        .hero-content {
+            padding: 60px 0;
+        }
+    }
+}
+
+@include xs {
+    #hero-section {
+        h1 {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 }
