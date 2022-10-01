@@ -71,3 +71,55 @@ footer {
         }
     }
 }
+
+@include md {
+    footer {
+        .footer-top {
+            padding: 60px 0;
+        }
+
+        .footer-bottom {
+            text-align: center;
+
+            .footer-nav {
+                justify-content: center !important;
+
+                a {
+                    margin: 0 25px 10px;
+                }
+            }
+        }
+    }
+}
+
+@include xs {
+    footer {
+        .footer-top {
+            text-align: center;
+        }
+
+        .socials {
+            justify-content: space-evenly !important;
+        }
+    }
+}
+
+@include xxs {
+    footer {
+        .footer-top {
+            .footer-widget {
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                }
+            }
+        }
+
+        .footer-bottom {
+            .footer-nav {
+                flex-wrap: wrap;
+                margin-bottom: 15px;
+            }
+        }
+    }
+}

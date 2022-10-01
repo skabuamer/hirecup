@@ -26,13 +26,13 @@
                     <!-- LOGO AND COLLAPSE BUTTON  -->
                     <div class="col-lg-2">
                         <div class="row align-items-center">
-                            <div class="col-lg-12 col-9">
+                            <div class="col-lg-12 col-sm-9 col-6">
                                 <div class="logo-container">
                                     <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
                                 </div>
                             </div>
 
-                            <div class="col-3 d-lg-none d-flex justify-content-end">
+                            <div class="col-sm-3 col-6 d-lg-none d-flex justify-content-end">
                                 <button class="btn btn-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-menu" aria-controls="nav-menu">
                                     <i class="fa-sharp fa-solid fa-grid-2"></i>
                                 </button>
@@ -136,22 +136,22 @@
                         <h2>We may be strong as individuals but <span class="colored">together we are invincible</span></h2>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-4">
+                    <div class="row justify-content-center gy-4">
+                        <div class="col-lg-4 col-sm-6 col-9 col-xxs-12">
                             <div class="single-process">
                                 <i class="fa-light fa-arrow-up-from-bracket"></i>
                                 <h3>submit your CV</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae sit donec lectus</p>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-6 col-9 col-xxs-12">
                             <div class="single-process">
                                 <i class="fa-light fa-phone-volume"></i>
                                 <h3>Wait for call</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae sit donec lectus</p>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4 col-sm-6 col-9 col-xxs-12">
                             <div class="single-process last-process">
                                 <i class="fa-light fa-user-check"></i>
                                 <h3>Get the asset</h3>
@@ -166,14 +166,14 @@
             <!-- !-------------APPLY SECTION START-------------! -->
             <section id="apply-section">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-10">
                             <div class="apply-img">
                                 <img src="assets/img/shaped-img/apply-img.png" alt="" class="img-fluid" />
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-10">
                             <div class="section-heading">
                                 <span class="subtitle">Get Best company</span>
                                 <h2><span class="colored">Apply Now!</span> 520+ company searching for you</h2>
@@ -181,8 +181,10 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae sit donec lectus suscipit ultricies rhoncus. Egestas platea in mauris urna gravida odio nam quisque
                                 </p>
 
-                                <a href="#" class="btn-custom"><i class="fa-regular fa-arrow-up-from-bracket"></i>upload CV</a>
-                                <a href="#hire-section" class="btn-custom">looking for an employee?</a>
+                                <div class="apply-btns">
+                                    <a href="#" class="btn-custom"><i class="fa-regular fa-arrow-up-from-bracket"></i>upload CV</a>
+                                    <a href="#hire-section" class="btn-custom">looking for an employee?</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -193,8 +195,8 @@
             <!-- !-------------HIRE SECTION START-------------! -->
             <section id="hire-section">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col-lg-6">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-lg-6 col-md-10 order-lg-1 order-2">
                             <div class="section-heading">
                                 <span class="subtitle">Get Best Employee</span>
                                 <h2><span class="colored">Hire Now!</span> 1250+ CV already submitted here</h2>
@@ -202,13 +204,15 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae sit donec lectus suscipit ultricies rhoncus. Egestas platea in mauris urna gravida odio nam quisque
                                 </p>
 
-                                <a href="#" class="btn-custom">hire employee</a>
-                                <a href="#apply-section" class="btn-custom">looking for a job?</a>
+                                <div class="hire-btns">
+                                    <a href="#" class="btn-custom">hire employee</a>
+                                    <a href="#apply-section" class="btn-custom">looking for a job?</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
-                            <div class="apply-img">
+                        <div class="col-lg-6 col-md-10 order-lg-2 order-1">
+                            <div class="hire-img">
                                 <img src="assets/img/shaped-img/hire-img.png" alt="" class="img-fluid" />
                             </div>
                         </div>
@@ -266,21 +270,20 @@
                                 Company/Job
                             </button>
                         </li>
-                        <li>
-                            <div class="search-asset">
-                                <form action="#">
-                                    <form action="">
-                                        <input type="search" name="search" id="search-asset" placeholder="Ex: Graphic Designer" />
-                                        <button class="to-search"><i class="fa-regular fa-magnifying-glass"></i></button>
-                                    </form>
+
+                        <li class="search-asset">
+                            <form action="#">
+                                <form action="">
+                                    <input type="search" name="search" id="search-asset" placeholder="Ex: Graphic Designer" />
+                                    <button class="to-search"><i class="fa-regular fa-magnifying-glass"></i></button>
                                 </form>
-                            </div>
+                            </form>
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                             <div class="row justify-content-center gy-4">
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -309,7 +312,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -338,7 +341,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -367,7 +370,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -400,7 +403,7 @@
 
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
                             <div class="row justify-content-center gy-4">
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -428,7 +431,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -456,7 +459,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -484,7 +487,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -517,7 +520,7 @@
 
                         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
                             <div class="row justify-content-center gy-4">
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -546,7 +549,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -575,7 +578,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -604,7 +607,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8">
+                                <div class="col-xl-3 col-lg-4 col-sm-6 col-8 col-xxs-12">
                                     <div class="single-asset">
                                         <div class="asset-header">
                                             <h4>Graphic & Visual Designer</h4>
@@ -642,8 +645,8 @@
             <!-- !-------------TESTIMONIAL SECTION START-------------! -->
             <section id="testimonial-section">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-10">
                             <div class="reviewer-table">
                                 <img src="assets/img/shaped-img/testimonial-bg.png" alt="" />
                                 <i class="fa-solid fa-quote-right"></i>
@@ -665,7 +668,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-md-10">
                             <div class="testimonials">
                                 <div class="testimonial-slider">
                                     <div>
@@ -731,8 +734,8 @@
                         <h2>Read our latest blog and <span class="colored">get update about job and employye</span></h2>
                     </div>
 
-                    <div class="row">
-                        <div class="col-lg-6">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-sm-10 col-12">
                             <div class="single-post-expand">
                                 <img src="assets/img/blogs/blog-1.png" alt="" class="img-fluid" />
                                 <h3>New Travel dolor sit amet, consectetur adipiscing elit. Ac natoque mi morbi</h3>
@@ -742,11 +745,11 @@
                                     Condimentum non in sit pellentesque tristique. A nibh malesuada vitae interdum lectus nibh egestas aenean
                                 </p>
 
-                                <div class="btn-custom">read full Post</div>
+                                <a class="btn-custom" href="#">read full Post</a>
                             </div>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 col-sm-10 col-12">
                             <div class="single-post-info">
                                 <img src="assets/img/blogs/blog-2.png" alt="" class="img-fluid" />
                                 <h3>New Travel dolor sit amet, consectetur adipiscing elit</h3>
@@ -778,14 +781,14 @@
             <!-- !-------------FOOTER-TOP SECTION STARTS HERE-------------! -->
             <div class="footer-top">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-lg-3">
+                    <div class="row gy-5">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="logo">
                                 <img src="assets/img/logo2.png" alt="" class="img-fluid" />
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">
                                 <h3>contact</h3>
                                 <ul class="contact-info">
@@ -802,7 +805,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">
                                 <h3>Quick link</h3>
                                 <ul>
@@ -813,7 +816,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">
                                 <h3>get in touch</h3>
                                 <ul class="socials d-flex justify-content-between">
@@ -841,11 +844,11 @@
             <div class="footer-bottom">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-lg-1 order-2">
                             <span class="copyright">&copy;2020 All rights reserved aflamesaimon@gmail.com</span>
                         </div>
 
-                        <div class="col-lg-6">
+                        <div class="col-lg-6 order-lg-2 order-1">
                             <div class="footer-nav d-flex align-items-center justify-content-end">
                                 <a href="#">Home</a>
                                 <a href="#">about</a>

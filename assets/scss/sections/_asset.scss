@@ -49,6 +49,7 @@
             align-items: center;
             border-bottom: 1px solid #e7e7e7;
             padding: 13px 20px 8px;
+            justify-content: center;
 
             i {
                 background: #ffbd69;
@@ -94,6 +95,89 @@
         a {
             text-decoration: underline;
             color: #787878;
+        }
+    }
+}
+
+@include lg {
+    #asset-section {
+        .nav-pills .nav-link {
+            margin-right: 30px;
+        }
+    }
+}
+
+@include md {
+    #asset-section {
+        .section-heading {
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+        }
+    }
+}
+
+@include sm {
+    #asset-section {
+        padding: 60px 0;
+        .section-heading {
+            margin-bottom: 60px;
+
+            h2 {
+                font-size: 30px;
+                line-height: 40px;
+            }
+        }
+        .nav-pills .nav-link {
+            margin-bottom: 30px;
+        }
+
+        #pills-contact-tab {
+            margin-right: 0;
+        }
+
+        .search-asset {
+            width: 80%;
+        }
+    }
+}
+
+@include xs {
+    #asset-section {
+        .section-heading {
+            width: 100%;
+        }
+    }
+}
+
+@include xxs {
+    #asset-section {
+        .section-heading {
+            h2 {
+                font-size: 25px;
+                line-height: 35px;
+            }
+        }
+
+        .nav-pills {
+            margin-bottom: 35px;
+            .nav-link {
+                margin: 0 15px;
+                margin-bottom: 20px;
+            }
+        }
+
+        #pills-contact-tab {
+            margin-right: 15px;
+        }
+        .search-asset {
+            width: 100%;
+        }
+        .col-xxs-12 {
+            width: 100%;
         }
     }
 }
