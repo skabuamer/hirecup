@@ -534,6 +534,11 @@ button.to-search i {
 #apply-section .section-heading p {
   margin-bottom: 47px;
 }
+#apply-section .section-heading .apply-btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 #apply-section .section-heading .btn-custom {
   border-radius: 100px;
   height: 50px;
@@ -554,21 +559,26 @@ button.to-search i {
   border: none;
 }
 
+@media screen and (max-width: 1199px) {
+  #apply-section .section-heading .apply-btns {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 991px) {
-  #app-section .section-heading {
+  #apply-section .section-heading {
     margin-top: 30px;
   }
-  #app-section .section-heading h2 {
+  #apply-section .section-heading h2 {
     font-size: 35px;
     line-height: 45px;
     margin-bottom: 30px;
   }
-  #app-section .section-heading p {
+  #apply-section .section-heading p {
     font-size: 14px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #app-section .apply-img {
+  #apply-section .apply-img {
     text-align: center;
   }
 }
@@ -591,9 +601,7 @@ button.to-search i {
     line-height: 35px;
   }
   #apply-section .section-heading .apply-btns {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 10px;
   }
   #apply-section .section-heading .btn-custom {
@@ -619,6 +627,11 @@ button.to-search i {
 #hire-section .section-heading p {
   margin-bottom: 47px;
 }
+#hire-section .section-heading .hire-btns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
 #hire-section .section-heading .btn-custom {
   background-color: #f3c623;
   border-radius: 100px;
@@ -640,6 +653,11 @@ button.to-search i {
   border: none;
 }
 
+@media screen and (max-width: 1199px) {
+  #hire-section .section-heading .hire-btns {
+    justify-content: center;
+  }
+}
 @media screen and (max-width: 991px) {
   #hire-section .section-heading {
     margin-top: 30px;
@@ -677,9 +695,7 @@ button.to-search i {
     line-height: 35px;
   }
   #hire-section .section-heading .hire-btns {
-    display: flex;
     flex-direction: column;
-    align-items: center;
     row-gap: 10px;
   }
   #hire-section .section-heading .btn-custom {
@@ -841,6 +857,7 @@ button.to-search i {
   text-align: center;
   width: fit-content;
   margin: auto;
+  display: table;
 }
 #testimonial-section .reviewer-table::before {
   content: "";

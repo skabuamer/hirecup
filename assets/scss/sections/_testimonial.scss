@@ -6,6 +6,7 @@
         text-align: center;
         width: fit-content;
         margin: auto;
+        display: table;
 
         &::before {
             content: "";
