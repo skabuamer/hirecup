@@ -341,7 +341,7 @@ a:visited {
 
 .theme-toggle-container {
   position: fixed;
-  z-index: 130;
+  z-index: 110;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
