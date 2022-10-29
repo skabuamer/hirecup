@@ -29,8 +29,12 @@
             height: 50px;
             padding: 0 40px;
             line-height: 47px;
+            color: $black;
 
-            color: $main-color;
+            &:hover {
+                background-color: $color-2;
+                color: $white;
+            }
 
             i {
                 margin-right: 10px;
@@ -41,6 +45,7 @@
             background: none;
             text-decoration: underline;
             border: none;
+            color: $theme-2;
 
             &:hover {
                 color: $color-2;
@@ -66,8 +71,6 @@
             margin-top: 30px;
 
             h2 {
-                font-size: 35px;
-                line-height: 45px;
                 margin-bottom: 30px;
             }
 
@@ -88,8 +91,6 @@
     #hire-section {
         .section-heading {
             h2 {
-                font-size: 30px;
-                line-height: 40px;
                 margin-bottom: 20px;
             }
             p {
@@ -108,11 +109,6 @@
 @include xxs {
     #hire-section {
         .section-heading {
-            h2 {
-                font-size: 25px;
-                line-height: 35px;
-            }
-
             .hire-btns {
                 flex-direction: column;
                 row-gap: 10px;

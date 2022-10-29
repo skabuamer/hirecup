@@ -6,7 +6,7 @@
         text-align: center;
     }
 }
-@include xl {
-    #client-section {
-    }
+
+.dark-mode-logo {
+    filter: invert(100%) sepia(3%) saturate(12%) hue-rotate(103deg) brightness(105%) contrast(105%);
 }

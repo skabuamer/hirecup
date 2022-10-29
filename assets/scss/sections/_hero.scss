@@ -1,6 +1,8 @@
 /*---!-------------HERO SECTION STYLES-------------!---*/
 #hero-section {
     position: relative;
+    background: url(../img/bg/header-banner-bg-2.png) no-repeat;
+    background-position: bottom right;
 
     .hero-content {
         padding: 180px 0;
@@ -54,7 +56,7 @@ button.to-search {
     right: 0;
     top: 0;
     border: 0;
-    padding: 25px;
+    padding: 0 25px;
     bottom: 0;
     border-radius: 0px 50px 50px 50px;
     background-color: $color-2;
@@ -68,15 +70,6 @@ button.to-search {
 .gold-bg {
     background-color: #f3c62382;
     padding: 0 30px;
-}
-
-.hero-img {
-    img {
-        position: absolute;
-        top: -105px;
-        right: 0;
-        z-index: -1;
-    }
 }
 
 @include xl {
@@ -93,14 +86,22 @@ button.to-search {
             line-height: 26px;
         }
     }
-
-    .hero-img img {
-        width: 58%;
-    }
 }
 
 @include lg {
     #hero-section {
+        z-index: 1;
+        &::before {
+            content: "";
+            position: absolute;
+            background: linear-gradient(90deg, $banner-bg, transparent);
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
         h1 {
             font-size: 45px;
             line-height: 55px;
@@ -110,10 +111,6 @@ button.to-search {
 
     .gold-bg {
         padding: 0 20px;
-    }
-
-    .hero-img img {
-        width: 70%;
     }
 }
 
@@ -150,7 +147,9 @@ button.to-search {
 
 @include sm {
     #hero-section {
-        background-color: #ffffffbd;
+        &::before {
+            background: $banner-bg;
+        }
 
         p {
             margin-bottom: 40px;
@@ -160,6 +159,18 @@ button.to-search {
             padding: 60px 0;
         }
     }
+
+    input#search {
+        height: 55px;
+        line-height: 55px;
+    }
+
+    button.to-search {
+        padding: 0 18px;
+        i {
+            font-size: 22px;
+        }
+    }
 }
 
 @include xs {
@@ -167,6 +178,17 @@ button.to-search {
         h1 {
             font-size: 30px;
             line-height: 40px;
+        }
+    }
+    input#search {
+        height: 45px;
+        line-height: 45px;
+    }
+
+    button.to-search {
+        padding: 0 15px;
+        i {
+            font-size: 20px;
         }
     }
 }

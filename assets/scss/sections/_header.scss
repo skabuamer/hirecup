@@ -1,44 +1,116 @@
 /*---!-------------HEADER SECTION STYLES-------------!---*/
 header {
     padding: 30px 0;
-    transition: all 0.4s ease;
+    // transition: all 0.4s ease;
+    background: url(../img/bg/banner-bg.png) no-repeat;
+    background-position: 100% -20px;
+    position: relative;
+    z-index: 2;
 
-    // .navbar-nav {
-    //     background: url(../img/bg/header-banner-bg.png);
-    // }
+    &::before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: linear-gradient(to bottom, $banner-bg, transparent);
+        width: 100%;
+        top: 0;
+        height: 100%;
+        right: 0;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        background: url(../img/bg/banner-bg-shape-2.png);
+        background-size: 282px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        z-index: -2;
+    }
 
     .nav-item {
         margin-left: 55px;
 
         a {
-            color: $black;
+            color: $theme-2;
             text-transform: capitalize;
+            padding-bottom: 5px;
+            border-bottom: 3px solid transparent;
+
+            &:hover {
+                border-bottom: 3px solid $color-3;
+            }
         }
 
         .btn-custom {
             color: $white;
+
+            &:hover {
+                border-bottom: 0;
+            }
         }
     }
 }
 
 .sticky {
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
-    background-color: $white;
+    background: $theme;
     z-index: 2;
-    box-shadow: 0 -10px 34px gray;
+    box-shadow: 0 -10px 34px $shadow;
     transition: all 0.6s ease;
+    padding: 20px 0;
+
+    &::before {
+        opacity: 0;
+    }
+
+    &::after {
+        opacity: 0;
+    }
+}
+
+.offcanvas {
+    background: $theme;
 }
 
 @include xl {
     header {
+        background-position: 100% -90px;
+    }
+}
+
+@include lg {
+    .overlay {
+        position: absolute;
+        background: linear-gradient(90deg, $banner-bg, transparent);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .sticky {
+        .overlay {
+            opacity: 0;
+        }
     }
 }
 
 @include md {
     header {
         padding: 15px 0;
+        background-position: 100% -300px;
+
+        &::after {
+            background-position: 100% -300px;
+        }
 
         button.btn-custom {
             padding: 0 15px;
@@ -58,12 +130,26 @@ header {
 
 @include sm {
     header {
-        background-color: #ffffffbd;
+        background-position: 100% -480px;
+        &::after {
+            background-position: 100% -480px;
+        }
+    }
+
+    .overlay {
+        background: $banner-bg;
+    }
+}
+
+@include xs {
+    header {
+        background-position: 100% -474px;
     }
 }
 
 @include xxs {
     header {
+        background-position: 100% -460px;
         button.btn-custom {
             padding: 0 10px;
             height: 40px;

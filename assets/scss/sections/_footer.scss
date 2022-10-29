@@ -2,7 +2,7 @@
 footer {
     .footer-top {
         padding: 85px 0;
-        background-color: $main-color;
+        background-color: #10375c;
 
         .footer-widget {
             h3 {
@@ -72,10 +72,28 @@ footer {
     }
 }
 
+@include lg {
+    footer {
+        .footer-top {
+            .contact-info {
+                i {
+                    display: block;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
 @include md {
     footer {
         .footer-top {
             padding: 60px 0;
+
+            .contact-info {
+                i {
+                    display: inline;
+                }
+            }
         }
 
         .footer-bottom {
@@ -99,7 +117,8 @@ footer {
         }
 
         .socials {
-            justify-content: space-evenly !important;
+            justify-content: center !important;
+            gap: 35px;
         }
     }
 }
@@ -109,9 +128,13 @@ footer {
         .footer-top {
             .footer-widget {
                 h3 {
-                    font-size: 20px;
-                    line-height: 30px;
+                    font-size: 18px;
+                    line-height: 28px;
                 }
+            }
+
+            .socials i {
+                font-size: 20px;
             }
         }
 

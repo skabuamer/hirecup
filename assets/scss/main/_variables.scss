@@ -1,12 +1,58 @@
 // colors
-$main-color: #10375c;
-$color-2: #127681;
+
+:root {
+    --primary-theme: #fff;
+    --secondary-theme: #000;
+    --main-clr: #10375c;
+    --second-clr: #127681;
+    --third-clr: #f3c623;
+    --fourth-clr: #f4f6ff;
+    --fifth-clr: #ffede9;
+    --sixth-clr: #00000099;
+    --seventh-color: #f8f8fa;
+    --eighth-color: #fff;
+    --ninth-clr: #e7e7e7;
+    --tenth-clr: #ffbd69;
+    --11th-clr: #636363;
+    --banner-bg: rgba(255, 255, 255, 0.74);
+    --shadow: #808080;
+    --black: #000;
+}
+
+.dark-mode {
+    --primary-theme: #314354;
+    --secondary-theme: #fff;
+    --main-clr: #98bbdd;
+    --second-clr: #71bcc5;
+    --fourth-clr: #2c2d30;
+    --fifth-clr: #323436;
+    --sixth-clr: #bbbbbb;
+    --seventh-color: #242424;
+    --eighth-color: #383838;
+    --ninth-clr: #000;
+    --tenth-clr: #a16110;
+    --11th-clr: #cdcdcd;
+    --banner-bg: rgb(0 0 0 / 74%);
+    --shadow: #000;
+}
+
+$theme: var(--primary-theme);
+$theme-2: var(--secondary-theme);
+$main-color: var(--main-clr);
+$color-2: var(--second-clr);
 $color-3: #f3c623;
-$color-4: #f4f6ff;
-$color-5: #ffede9;
-$color-6: #00000099;
+$color-4: var(--fourth-clr);
+$color-5: var(--fifth-clr);
+$color-6: var(--sixth-clr);
+$color-7: var(--seventh-color);
+$color-8: var(--eighth-color);
+$color-9: var(--ninth-clr);
+$color-10: var(--tenth-clr);
+$color-11: var(--11th-clr);
+$banner-bg: var(--banner-bg);
+$shadow: var(--shadow);
 $white: #fff;
-$black: #000;
+$black: var(--black);
 
 // fonts
 $main-font: "Lato", sans-serif;

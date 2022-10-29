@@ -48,7 +48,7 @@
         }
 
         h3 {
-            color: $black;
+            color: $theme-2;
             text-transform: capitalize;
             margin-bottom: 15px;
         }
@@ -74,13 +74,6 @@
 }
 @include md {
     #process-section {
-        .section-heading {
-            h2 {
-                font-size: 35px;
-                line-height: 45px;
-            }
-        }
-
         .single-process {
             background: #d7d7d730;
 
@@ -100,31 +93,12 @@
 @include sm {
     #process-section {
         .section-heading {
-            h2 {
-                font-size: 30px;
-                line-height: 40px;
-            }
-        }
-    }
-}
-
-@include sm {
-    #process-section {
-        .section-heading {
             margin-bottom: 55px;
         }
     }
 }
 
 @include xxs {
-    #process-section {
-        .section-heading {
-            h2 {
-                font-size: 25px;
-                line-height: 35px;
-            }
-        }
-    }
     .col-xxs-12 {
         width: 100%;
     }

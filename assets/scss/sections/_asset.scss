@@ -1,7 +1,7 @@
 /*---!-------------ASSET SECTION STYLES-------------!---*/
 #asset-section {
     padding: 120px 0;
-    background-color: #f8f8fa;
+    background-color: $color-7;
 
     .section-heading {
         margin-bottom: 100px;
@@ -12,22 +12,25 @@
     }
 
     .nav-pills .nav-link {
-        background-color: $white;
+        background-color: $theme;
         border-radius: 100px;
-        color: $main-color;
+        color: $theme-2;
         margin-right: 45px;
         box-shadow: 0 0 147px rgba(0, 0, 0, 0.1);
 
         &.active,
         .nav-pills .show > .nav-link {
             background-color: $color-3;
+            color: $black;
         }
     }
 
     .search-asset {
         input#search-asset {
+            background-color: $theme;
             height: 44px;
             padding: 0 55px 0 25px;
+            box-shadow: 0 0 147px rgba(0, 0, 0, 0.1);
         }
 
         button.to-search {
@@ -40,19 +43,19 @@
     }
 
     .single-asset {
-        background: #fff;
-        border: 1px solid #e7e7e7;
+        background: $color-8;
+        border: 1px solid $color-9;
         border-radius: 5px;
 
         .asset-header {
             display: flex;
             align-items: center;
-            border-bottom: 1px solid #e7e7e7;
+            border-bottom: 1px solid $color-9;
             padding: 13px 20px 8px;
-            justify-content: center;
+            justify-content: space-between;
 
             i {
-                background: #ffbd69;
+                background: $color-10;
                 font-size: 20px;
                 color: $color-2;
                 border-radius: 50%;
@@ -63,10 +66,10 @@
 
     .asset-info {
         padding: 20px;
-        border-bottom: 1px solid #e7e7e7;
+        border-bottom: 1px solid $color-9;
 
         .single-info {
-            background: #f8f8fa;
+            background: $color-7;
             border-radius: 15px;
             display: flex;
             padding: 6px 15px;
@@ -79,6 +82,7 @@
 
             i {
                 margin-right: 10px;
+                color: $main-color;
             }
 
             h5 {
@@ -95,6 +99,7 @@
         a {
             text-decoration: underline;
             color: #787878;
+            display: inline-block;
         }
     }
 }
@@ -111,11 +116,6 @@
     #asset-section {
         .section-heading {
             margin-bottom: 60px;
-
-            h2 {
-                font-size: 35px;
-                line-height: 45px;
-            }
         }
     }
 }
@@ -125,11 +125,6 @@
         padding: 60px 0;
         .section-heading {
             margin-bottom: 60px;
-
-            h2 {
-                font-size: 30px;
-                line-height: 40px;
-            }
         }
         .nav-pills .nav-link {
             margin-bottom: 30px;
@@ -156,10 +151,7 @@
 @include xxs {
     #asset-section {
         .section-heading {
-            h2 {
-                font-size: 25px;
-                line-height: 35px;
-            }
+            margin-bottom: 40px;
         }
 
         .nav-pills {

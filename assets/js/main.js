@@ -1,6 +1,6 @@
 var slider = tns({
     container: ".clients",
-    slideBy: "page",
+    slideBy: "1",
     autoplay: true,
     controls: false,
     nav: false,
@@ -41,6 +41,74 @@ window.addEventListener("scroll", () => {
         headerArea.classList.remove("sticky");
     }
 });
+
+// preloader start
+document.body.style.position = "fixed";
+window.addEventListener("load", () => {
+    document.body.style.position = "";
+    document.querySelector(".preloader").style.display = "none";
+});
+// preloader end
+
+// back to top start
+window.addEventListener("scroll", () => {
+    document.querySelector(".back__to__top").classList.toggle("active", scrollY > document.querySelector("#hero-section").clientHeight);
+});
+
+document.querySelector(".back__to__top").addEventListener("click", () => {
+    window.scrollTo(0, 0);
+});
+// back to top end
+
+//
+let darkMode = localStorage.getItem("darkMode");
+
+const enableDarkMode = () => {
+    document.body.classList.add("dark-mode");
+    document.querySelector(".theme-toggle-container").classList.add("active");
+    document.querySelector(".theme-toggler i").className = "fa-solid fa-sun";
+    document.querySelector(".logo-container img").src = "assets/img/logo2.png";
+    document.querySelector(".offcanvas-title").src = "assets/img/logo2.png";
+    document.querySelectorAll(".single-client img").forEach((singleLogo) => {
+        singleLogo.classList.add("dark-mode-logo");
+    });
+    document.querySelectorAll(".asset-company img").forEach((singleLogo) => {
+        singleLogo.classList.add("dark-mode-logo");
+    });
+    localStorage.setItem("darkMode", "enabled");
+};
+
+const disableDarkMode = () => {
+    document.body.classList.remove("dark-mode");
+    document.querySelector(".theme-toggle-container").classList.remove("active");
+    document.querySelector(".theme-toggler i").className = "fa-solid fa-moon";
+    document.querySelector(".logo-container img").src = "assets/img/logo.png";
+    document.querySelector(".offcanvas-title").src = "assets/img/logo.png";
+
+    document.querySelectorAll(".single-client img").forEach((singleLogo) => {
+        singleLogo.classList.remove("dark-mode-logo");
+    });
+    document.querySelectorAll(".asset-company img").forEach((singleLogo) => {
+        singleLogo.classList.remove("dark-mode-logo");
+    });
+    localStorage.setItem("darkMode", null);
+};
+if (darkMode === "enabled") {
+    enableDarkMode();
+}
+
+document.querySelector(".theme-toggle-container").addEventListener("click", () => {
+    console.log("fght");
+    darkMode = localStorage.getItem("darkMode");
+
+    if (darkMode !== "enabled") {
+        enableDarkMode();
+    } else {
+        disableDarkMode();
+    }
+});
+
+//
 
 // let i = 1;
 
